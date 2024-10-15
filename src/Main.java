@@ -7,7 +7,9 @@ public class Main {
         double initialBalance = scanner.nextDouble();
         Card card = new Card(initialBalance);
         while (card.balance > 0) {
-            card.charge();
+            System.out.println("Enter total amount to be payed: ");
+            double total = scanner.nextDouble();
+            card.charge(total);
         }
     }
 }

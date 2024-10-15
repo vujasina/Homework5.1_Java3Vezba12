@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Card {
 
     //Polja
@@ -17,10 +15,7 @@ public class Card {
 
     //Metode
 
-    public void charge() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter total amount to be payed: ");
-        double total = scanner.nextDouble();
+    public void charge(double total) {
         if (balance >= total) {
             balance = balance - total;
             System.out.println("Payment successful! " + "New Balance is: " + balance);
